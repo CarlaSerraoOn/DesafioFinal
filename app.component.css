@@ -1,0 +1,27 @@
+
+.bg{ background-color: #101728;}
+
+.titulo { 
+    color: #ffffff;
+    align:center;}
+
+.left{float: none;}
+.right{float: right;}
+
+.btn{
+    background-color: #00ff00;
+    right: auto;
+    min-height: min-content;
+    padding: 10px;
+    border-radius: 100px 100px;
+    width: 20%;
+    height: 20%;
+    display: block;
+    cursor: pointer;
+    
+}
+.btn:hover {background-color: #00df00;
+}
+
+
+
