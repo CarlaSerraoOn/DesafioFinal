@@ -1,25 +1,30 @@
 
-.bg{ background-color: #101728;}
-
 .titulo { 
     color: #ffffff;
     align:center;}
 
-.left{float: none;}
-.right{float: right;}
+.left{
+    float: none;
+}
 
-.btn{
+.right{
+    float: right;
+}
+
+ .btn{
     background-color: #00ff00;
-    right: auto;
-    min-height: min-content;
     padding: 10px;
-    border-radius: 100px 100px;
+    border-radius: 100px 100px ;
+    border: none;
     width: 20%;
-    height: 20%;
     display: block;
     cursor: pointer;
-    
+
+    position: absolute;
+    top: 50%;
+    left: 0;    
 }
+
 .btn:hover {background-color: #00df00;
 }
 
