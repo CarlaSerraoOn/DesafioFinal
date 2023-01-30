@@ -5,13 +5,20 @@
   <h5>Instituto de Tecnologia</h5>
 </nav>
 <main>
-  <section>
-    <button class="btn"><h2>Start</h2></button>
-  </section>
 
-<div class="triangle-ledg"><h3>Sem Defeito</h3></div>
-<div class="triangle-ledo"><h3>Aguardando</h3></div>
-<div class="triangle-ledr"><h3>Com Defeito</h3></div>
+  <!-- app.component.html -->
+<button class="toggle-button" (click)="toggle()">{{ buttonText }}</button>
+
+  <div>
+    <div class="triangle-ledg"></div>
+    <div class="textg">Sem Defeito</div>
+
+    <div class="triangle-ledo"></div>
+    <div class="texto">Aguardando</div>
+    
+    <div class="triangle-ledr"></div>
+    <div class="textr">Com Defeito</div>
+  </div>
 </main>
 
 
