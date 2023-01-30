@@ -1,17 +1,12 @@
 
-.titulo { 
+.titulo {
     color: #ffffff;
-    align:center;}
+    box-align:center;}
 
-.left{
-    float: none;
-}
+.left{float: none;}
+.right{float: right;}
 
-.right{
-    float: right;
-}
-
- .btn{
+.btn{
     background-color: #00ff00;
     padding: 10px;
     border-radius: 100px 100px ;
@@ -21,12 +16,46 @@
     cursor: pointer;
 
     position: absolute;
-    top: 50%;
-    left: 0;    
-}
+    top: 30%;
+    left: 5%;
 
+}
 .btn:hover {background-color: #00df00;
 }
 
+.triangle-ledg {
+  width: 0;
+  height: 0;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-bottom: 50px solid greenyellow;
+  position: absolute;
+  left: 5%;
+  top: 60%;
+}
+.triangle-ledo {
+  width: 0;
+  height: 0;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-bottom: 50px solid orange;
+  position: absolute;
+  left: 5%;
+  top: 70%;
+}
 
+.triangle-ledr {
+  width: 0;
+  height: 0;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-bottom: 50px solid red;
+  position: absolute;
+  left: 5%;
+  top: 80%;
+}
 
+h3 {
+  left: 30%;
+  color: #ffffff;
+}
