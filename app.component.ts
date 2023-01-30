@@ -1,3 +1,4 @@
+// app.component.ts
 import { Component } from '@angular/core';
 
 @Component({
@@ -6,5 +7,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'DesafioFinal';
+  title(title: any) {
+    throw new Error('Method not implemented.');
+  }
+  buttonText = 'Start';
+
+  toggle() {
+    this.buttonText = this.buttonText === 'Start' ? 'Stop' : 'Start';
+  }
 }
