@@ -8,8 +8,8 @@
 
 
 
-/* app.component.css */
-.toggle-button {
+/* Botão Start/Stop */
+.green {
   background-color: #00ff00;
   padding: 10px;
   border-radius: 100px 100px ;
@@ -24,12 +24,13 @@
   font-size: 19px;
 }
 
-.toggle-button:hover {background-color: #00df00;
+.green:hover {background-color: #00df00;
 }
 
 
-.toggle-button.stop {
-  background-color: red;
+.red {
+  background-color: #ae0000;
+  color: #ffffff;
   padding: 10px;
   border-radius: 100px 100px ;
   border: none;
@@ -41,17 +42,9 @@
   top: 30%;
   left: 5%;
   font-size: 19px;
-  
 }
 
-
-
-button {
-  background-color: green;
-}
-
-button.stop {
-  background-color: red;
+.red:hover {background-color: #6f0000;
 }
 
 
