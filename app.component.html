@@ -1,25 +1,19 @@
-<div class="bg">
-  <nav class="titulo">
+<nav class="titulo">
   <img src="../assets/imagem/logo_transparente.png" alt="logo-fit" class="left" />
   <img src="../assets/imagem/prog.png" alt="prog-fit" class="right"/>
   <h5>Instituto de Tecnologia</h5>
 </nav>
-<main>
 
-  <!-- app.component.html -->
-<button class="toggle-button" (click)="toggle()">{{ buttonText }}</button>
+<button class="toggle-button" [ngClass]="{'green': buttonText === 'Start', 'red': buttonText==='Stop'}" (click)="toggle()">{{ buttonText }}</button>
 
-  <div>
-    <div class="triangle-ledg"></div>
-    <div class="textg">Sem Defeito</div>
+<div>
+  <div class="triangle-ledg"></div>
+  <div class="textg">Sem Defeito</div>
 
-    <div class="triangle-ledo"></div>
-    <div class="texto">Aguardando</div>
-    
-    <div class="triangle-ledr"></div>
-    <div class="textr">Com Defeito</div>
-  </div>
-</main>
-
+  <div class="triangle-ledo"></div>
+  <div class="texto">Aguardando</div>
+  
+  <div class="triangle-ledr"></div>
+  <div class="textr">Com Defeito</div>
 
 </div>
