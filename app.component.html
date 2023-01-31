@@ -1,3 +1,4 @@
+
 <nav class="titulo">
   <img src="../assets/imagem/logo_transparente.png" alt="logo-fit" class="left" />
   <img src="../assets/imagem/prog.png" alt="prog-fit" class="right"/>
@@ -5,6 +6,12 @@
 </nav>
 
 <button class="toggle-button" [ngClass]="{'green': buttonText === 'Start', 'red': buttonText==='Stop'}" (click)="toggle()">{{ buttonText }}</button>
+
+<div id="webcam">
+  <webcam  [height]="400"      [width]="1000" ></webcam>
+</div>
+  
+
 
 <div>
   <div class="triangle-ledg"></div>
