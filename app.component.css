@@ -8,8 +8,8 @@
 
 
 
-/* app.component.css */
-.green {
+/* botões start e stop */
+.start-button-green {
 background-color: #00ff00;
 padding: 10px;
 border-radius: 100px 100px ;
@@ -20,16 +20,35 @@ display: block;
 cursor: pointer;
 
 position: absolute;
-top: 30%;
+z-index: 1;
+top: 25%;
 left: 5%;
 font-size: 40px;
 }
 
-.green:hover {background-color: #00df00;
+.start-button-green:hover {
+  background-color: #009500;
 }
 
+.start-button-dark-green {
+  background-color: darkgreen;
+  padding: 10px;
+  border-radius: 100px 100px ;
+  border: none;
+  width: 330px;
+  height: 80px;
+  display: block;
+  cursor: pointer;
 
-.red {
+  position: absolute;
+  z-index: 1;
+  top: 25%;
+  left: 5%;
+  font-size: 40px;
+  }
+
+
+.stop-button-red {
 background-color: #ae0000;
 color: #ffffff;
 padding: 10px;
@@ -41,26 +60,58 @@ display: block;
 cursor: pointer;
 
 position: absolute;
-top: 30%;
+z-index: 1;
+top: 40%;
 left: 5%;
 font-size: 40px;
 }
 
-.red:hover {background-color: #6f0000;
+.stop-button-red:hover {background-color: #6f0000;
 }
+
+.stop-button-dark-red {
+  background-color: darkred;
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 100px 100px ;
+  border: none;
+  width: 330px;
+  height: 80px;
+  display: block;
+  cursor: pointer;
+
+  position: absolute;
+  z-index: 1;
+  top: 40%;
+  left: 5%;
+  font-size: 40px;
+  }
 
 /*Fundo WebCam*/
 
 .fundo {
   position:absolute;
-top: 60%;
-right: 8%;
-width: 1050px;
-height: 800px;
-transform: translateY(-50%);
+  top: 60%;
+  right: 6%;
+  width: 1050px;
+  height: 800px;
+  transform: translateY(-50%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 /*Video WebCam*/
+.text{
+  color: #ffffff;
+  font-size: 48px;
+  position: absolute;
+  top: 15%;
+  right: 21%;
+  z-index: 1;
+  
+  
+}
 #webcam {
 position:absolute;
 top: 60%;
@@ -146,6 +197,7 @@ top: 80%;
 
 
 /*Led `s*/
+
 .led-green {
   margin: 0 auto;
   width: 50px;
@@ -153,41 +205,24 @@ top: 80%;
   background-color: #b0ff11;
   border-radius: 50%;
   box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #304701 0 -1px 9px, #89FF00 0 2px 12px;
-  animation: blinkGreen 1s infinite;
+ /* animation: blinkGreen 1s infinite;*/
   position: absolute;
   right: 9%;
   top: 40%;
 }
 
-@-webkit-keyframes blinkGreen {
-  from { background-color: #b0ff11; }
-  50% { background-color: #AA0; box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #006400 0 -1px 9px, #89FF00 0 2px 0; }
-  to { background-color: #b0ff11; }
+.led-red {
+  margin: 0 auto;
+  width: 50px;
+  height: 50px;
+  background-color: #F00;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #441313 0 -1px 9px, rgb(249, 9, 9) 0 2px 12px;
+  /*animation: blinkRed 1s infinite;*/
+  position: absolute;
+  right: 9%;
+  top: 60%;
 }
-@-moz-keyframes blinkGreen {
-  from { background-color: #b0ff11; }
-  50% { background-color: #AA0; box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #006400 0 -1px 9px, #89FF00 0 2px 0; }
-  to { background-color: #b0ff11; }
-}
-@-ms-keyframes blinkGreen {
-  from { background-color: #b0ff11; }
-  50% { background-color: #AA0; box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #006400 0 -1px 9px, #89FF00 0 2px 0; }
-  to { background-color: #b0ff11; }
-}
-@-o-keyframes blinkGreen {
-  from { background-color: #b0ff11;}
-  50% { background-color: #AA0; box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #006400 0 -1px 9px, #89FF00 0 2px 0; }
-  to { background-color: #b0ff11; }
-}
-@keyframes blinkGreen {
-  from { background-color: #b0ff11;}
-  50% { background-color: #AA0; box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #006400 0 -1px 9px, #89FF00 2px 0; }
-  to { background-color: #b0ff11; }
-}
-
-
-
-
 .led-yellow {
   margin: 0 auto;
   width: 50px;
@@ -195,12 +230,12 @@ top: 80%;
   background-color: #FF0;
   border-radius: 50%;
   box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #808002 0 -1px 9px, #FF0 0 2px 12px;
-  animation: blinkYellow 3s infinite;
+ /* animation: blinkYellow 3s infinite;*/
   position: absolute;
   right: 9%;
   top: 50%;
 }
-
+/*
 @-webkit-keyframes blinkYellow {
     from { background-color: #FF0; }
     50% { background-color: #AA0; box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #808002 0 -1px 9px, #FF0 0 2px 0; }
@@ -225,22 +260,4 @@ top: 80%;
     from { background-color: #FF0; }
     50% { background-color: #AA0; box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #808002 0 -1px 9px, #FF0 0 2px 0; }
     to { background-color: #FF0; }
-}
-
-.led-red-blink {
-  margin: 0 auto;
-  width: 50px;
-  height: 50px;
-  background-color: #F00;
-  border-radius: 50%;
-  box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #441313 0 -1px 9px, rgba(255, 0, 0, 0.5) 0 2px 12px;
-  animation: blinkRed 1s infinite;
-  position: absolute;
-  right: 9%;
-  top: 60%;
-}
-@keyframes blinkRed {
-    from { background-color: #F00; }
-    50% { background-color: #A00; box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #441313 0 -1px 9px, rgba(255, 0, 0, 0.5) 0 2px 0;}
-    to { background-color: #F00; }
-}
+}*/
