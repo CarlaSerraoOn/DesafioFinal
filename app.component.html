@@ -1,12 +1,20 @@
+
 <nav class="titulo">
   <img src="../assets/imagem/logo_transparente.png" alt="logo-fit" class="left" />
   <img src="../assets/imagem/prog.png" alt="prog-fit" class="right"/>
   <h5>Instituto de Tecnologia</h5>
 </nav>
 
-<button class="toggle-button" [ngClass]="{'green': buttonText === 'Start', 'red': buttonText==='Stop'}" (click)="toggle()">{{ buttonText }}</button>
+<button (click)="start()" [ngClass]="startButtonClass">Start</button>
+<button (click)="stop()" [ngClass]="stopButtonClass">Stop</button>
+
+<div *ngIf="startLed" [ngClass]="['led-green']"></div>
+<div *ngIf="stopLed" [ngClass]="['led-red']"></div>
+
 <img src="../assets/imagem/fundo.svg" class="fundo">
 
+
+<h1 class="text">DESAFIO DE AUTOMAÇÃO</h1>
 <div id="webcam">
   <webcam></webcam>
 </div>
