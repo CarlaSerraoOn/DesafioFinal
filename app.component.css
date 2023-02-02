@@ -21,7 +21,7 @@ cursor: pointer;
 
 position: absolute;
 z-index: 1;
-top: 25%;
+top: 50%;
 left: 5%;
 font-size: 40px;
 }
@@ -42,7 +42,7 @@ font-size: 40px;
 
   position: absolute;
   z-index: 1;
-  top: 25%;
+  top: 50%;
   left: 5%;
   font-size: 40px;
   }
@@ -61,7 +61,7 @@ cursor: pointer;
 
 position: absolute;
 z-index: 1;
-top: 40%;
+top: 60%;
 left: 5%;
 font-size: 40px;
 }
@@ -82,7 +82,7 @@ font-size: 40px;
 
   position: absolute;
   z-index: 1;
-  top: 40%;
+  top: 60%;
   left: 5%;
   font-size: 40px;
   }
@@ -92,9 +92,21 @@ font-size: 40px;
 .fundo {
   position:absolute;
   top: 60%;
-  right: 6%;
+  right: 8%;
   width: 1050px;
   height: 800px;
+  transform: translateY(-50%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.container {
+  position:absolute;
+  top: 60%;
+  right: 17%;
+  width: 700px;
+  height: 500px;
   transform: translateY(-50%);
   background-repeat: no-repeat;
   background-size: cover;
@@ -122,7 +134,7 @@ transform: translateY(-50%);
 
 }
 
-/* TRIANGULOS */
+/* TRIANGULOS 
 
 .triangle-ledg {
 width: 0;
@@ -157,7 +169,7 @@ left: 5%;
 top: 80%;
 }
 
-/*TEXTO AO LADO DO TRIANGULO */
+/*TEXTO AO LADO DO TRIANGULO 
 .textg{
   display: inline-block;
   margin-left: 30px;
@@ -194,7 +206,7 @@ top: 80%;
   font-size: 18px;
 }
 
-
+*/
 
 /*Led `s*/
 
