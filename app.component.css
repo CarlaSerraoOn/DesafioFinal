@@ -124,14 +124,8 @@ font-size: 40px;
 
 
 }
-#webcam {
-position:absolute;
-top: 60%;
-right: 20%;
-width: 650px;
-height: 500px;
-transform: translateY(-50%);
-
+.label {
+  color: #ffffff;
 }
 
 /* TRIANGULOS 
