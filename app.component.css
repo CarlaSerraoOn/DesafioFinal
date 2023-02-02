@@ -21,7 +21,7 @@ cursor: pointer;
 
 position: absolute;
 z-index: 1;
-top: 50%;
+top: 40%;
 left: 5%;
 font-size: 40px;
 }
@@ -42,7 +42,7 @@ font-size: 40px;
 
   position: absolute;
   z-index: 1;
-  top: 50%;
+  top: 40%;
   left: 5%;
   font-size: 40px;
   }
@@ -61,7 +61,7 @@ cursor: pointer;
 
 position: absolute;
 z-index: 1;
-top: 60%;
+top: 55%;
 left: 5%;
 font-size: 40px;
 }
@@ -82,7 +82,7 @@ font-size: 40px;
 
   position: absolute;
   z-index: 1;
-  top: 60%;
+  top: 55%;
   left: 5%;
   font-size: 40px;
   }
@@ -91,7 +91,7 @@ font-size: 40px;
 
 .fundo {
   position:absolute;
-  top: 60%;
+  top: 55%;
   right: 8%;
   width: 1050px;
   height: 800px;
@@ -103,7 +103,7 @@ font-size: 40px;
 
 .container {
   position:absolute;
-  top: 60%;
+  top: 55%;
   right: 17%;
   width: 700px;
   height: 500px;
@@ -118,89 +118,27 @@ font-size: 40px;
   color: #ffffff;
   font-size: 48px;
   position: absolute;
-  top: 15%;
-  right: 21%;
+  top: 10%;
+  right: 20%;
   z-index: 1;
+}
 
+button{
+
+  position:absolute;
+  top: 85%;
+  right: 17%;
+  width: 700px;
+  height: 50px;
+  border-radius: 17px;
 
 }
 .label {
-  color: #ffffff;
+  color: black;
+  font-size: 40px;
+
 }
 
-/* TRIANGULOS 
-
-.triangle-ledg {
-width: 0;
-height: 0;
-border-left: 25px solid transparent;
-border-right: 25px solid transparent;
-border-bottom: 50px solid greenyellow;
-position: absolute;
-left: 5%;
-top: 60%;
-}
-
-.triangle-ledo {
-width: 0;
-height: 0;
-border-left: 25px solid transparent;
-border-right: 25px solid transparent;
-border-bottom: 50px solid orange;
-position: absolute;
-left: 5%;
-top: 70%;
-}
-
-.triangle-ledr {
-width: 0;
-height: 0;
-border-left: 25px solid transparent;
-border-right: 25px solid transparent;
-border-bottom: 50px solid red;
-position: absolute;
-left: 5%;
-top: 80%;
-}
-
-/*TEXTO AO LADO DO TRIANGULO 
-.textg{
-  display: inline-block;
-  margin-left: 30px;
-  color: #ffffff;
-  width: 0;
-  height: 0;
-  position: absolute;
-  left: 8%;
-  top: 60%;
-  font-size: 18px;
-}
-
-.texto{
-  display: inline-block;
-  margin-left: 30px;
-  color: #ffffff;
-  width: 0;
-  height: 0;
-  position: absolute;
-  left: 8%;
-  top: 73%;
-  font-size: 18px;
-}
-
-.textr{
-  display: inline-block;
-  margin-left: 30px;
-  color: #ffffff;
-  width: 0;
-  height: 0;
-  position: absolute;
-  left: 8%;
-  top: 80%;
-  font-size: 18px;
-}
-
-*/
 
 /*Led `s*/
 
@@ -241,29 +179,3 @@ top: 80%;
   right: 9%;
   top: 50%;
 }
-/*
-@-webkit-keyframes blinkYellow {
-    from { background-color: #FF0; }
-    50% { background-color: #AA0; box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #808002 0 -1px 9px, #FF0 0 2px 0; }
-    to { background-color: #FF0; }
-}
-@-moz-keyframes blinkYellow {
-    from { background-color: #FF0; }
-    50% { background-color: #AA0; box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #808002 0 -1px 9px, #FF0 0 2px 0; }
-    to { background-color: #FF0; }
-}
-@-ms-keyframes blinkYellow {
-    from { background-color: #FF0; }
-    50% { background-color: #AA0; box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #808002 0 -1px 9px, #FF0 0 2px 0; }
-    to { background-color: #FF0; }
-}
-@-o-keyframes blinkYellow {
-    from { background-color: #FF0; }
-    50% { background-color: #AA0; box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #808002 0 -1px 9px, #FF0 0 2px 0; }
-    to { background-color: #FF0; }
-}
-@keyframes blinkYellow {
-    from { background-color: #FF0; }
-    50% { background-color: #AA0; box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #808002 0 -1px 9px, #FF0 0 2px 0; }
-    to { background-color: #FF0; }
-}*/
