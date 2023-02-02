@@ -35,7 +35,7 @@ getImage() {
   });
 }
 
-  
+
 
   triggerObservable = new Subject();
     handleImage(webcamImage: WebcamImage) {
@@ -67,8 +67,4 @@ getImage() {
     });
         }
 
-
-
-
-
-        }
+ }
